@@ -4,10 +4,7 @@ kill_timeout = 5
 processes = []
 
 [env]
-    FOUNDRY_USERNAME="..."
-    FOUNDRY_PASSWORD="..."
-    FOUNDRY_ADMIN_KEY="..."
-    FOUNDRY_AWS_CONFIG="/home/foundry/aws.json"
+#    FOUNDRY_AWS_CONFIG="/home/foundry/aws.json"
     CONTAINER_PRESERVE_CONFIG=true
 
 [experimental]
@@ -39,7 +36,7 @@ processes = []
     port = 443
 
 [[services.tcp_checks]]
-    grace_period = "180s"
-    interval = "120s"
+    grace_period = "60s"
+    interval = "15s"
     restart_limit = 1
-    timeout = "120s"
+    timeout = "2s"
