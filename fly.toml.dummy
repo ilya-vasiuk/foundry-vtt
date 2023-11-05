@@ -4,7 +4,6 @@ kill_timeout = 5
 processes = []
 
 [env]
-#    FOUNDRY_AWS_CONFIG="/home/foundry/aws.json"
     CONTAINER_PRESERVE_CONFIG=true
 
 [experimental]
